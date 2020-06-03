@@ -14,8 +14,16 @@ y = "7"
 # Write a print statement that combines x + y into the integer value 12
 
 # YOUR CODE HERE
-
+s_int = x+int(y)
+s_another_int = int(x+7)
+print(s_int)
+print(s_another_int)
+print(type(s_int))
+print(type(s_another_int))
 
 # Write a print statement that combines x + y into the string value 57
 
 # YOUR CODE HERE
+s_string = str(x) + y
+print(s_string)
+print(type(s_string))
