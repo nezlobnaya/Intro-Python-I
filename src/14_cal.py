@@ -31,4 +31,26 @@ import sys
 import calendar
 from datetime import datetime
 
-x = input("Enter comma-separated month and year: ").split(',')
+
+month, year = None, None
+
+if len(sys.argv) == 3:
+  year = int(sys.argv[2])
+  month = int(sys.argv[1])
+
+elif len(sys.argv) == 2:
+  month = int(sys.argv[1])
+
+if not month and not year:
+  month = datetime.today().month
+  year = datetime.today().year
+  print('program expects arguments to be given')
+
+
+print(calendar.month(year, month))
+
+
+
+
+
+
